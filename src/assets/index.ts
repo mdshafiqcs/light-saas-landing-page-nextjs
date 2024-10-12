@@ -13,6 +13,8 @@ import CheckIcon from "./check.svg";
 import CogImage from "./cog.png";
 import Logo from "./logosaas.png";
 import MenuIcon from "./menu.svg";
+import cylinderImage from "./cylinder.png";
+import noodleImage from "./noodle.png"
 
 export {
   avatar1,
@@ -29,4 +31,6 @@ export {
   CogImage,
   Logo,
   MenuIcon,
+  cylinderImage,
+  noodleImage,
 }
