@@ -8,7 +8,7 @@ export const Hero = () => {
     <div className='container'>
       <div className="md:flex items-center">
         <div className='md:w-[478px]'>
-          <div className=' text-sm inline-flex border border-[#222]/10 rounded-lg px-3 py-1 tracking-tight'>Version 2.0 is here</div>
+          <div className='tag'>Version 2.0 is here</div>
           <h1 className='mt-6 text-5xl md:text-7xl font-bold tracking-tight bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text '>Pathway to productivity</h1>
           <p className='mt-6 tracking-tight text-[#010D3E] text-xl'>
           Celebrate the joy of accomplishment with an app designed to track your progress, motivate your efforts, and celebrate your successes.
