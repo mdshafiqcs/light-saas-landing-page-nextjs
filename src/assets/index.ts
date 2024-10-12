@@ -16,6 +16,13 @@ import MenuIcon from "./menu.svg";
 import cylinderImage from "./cylinder.png";
 import noodleImage from "./noodle.png"
 
+import acmeLogo from "@/assets/logo-acme.png";
+import quantumLogo from "@/assets/logo-quantum.png";
+import echoLogo from "@/assets/logo-echo.png";
+import celestialLogo from "@/assets/logo-celestial.png";
+import pulseLogo from "@/assets/logo-pulse.png";
+import apexLogo from "@/assets/logo-apex.png";
+
 export {
   avatar1,
   avatar2,
@@ -33,4 +40,10 @@ export {
   MenuIcon,
   cylinderImage,
   noodleImage,
+  acmeLogo,
+  apexLogo,
+  echoLogo,
+  pulseLogo,
+  quantumLogo,
+  celestialLogo,
 }
