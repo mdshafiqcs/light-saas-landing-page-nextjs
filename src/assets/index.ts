@@ -23,6 +23,9 @@ import celestialLogo from "@/assets/logo-celestial.png";
 import pulseLogo from "@/assets/logo-pulse.png";
 import apexLogo from "@/assets/logo-apex.png";
 
+import tubeImage from "@/assets/tube.png";
+import pyramidImage from "@/assets/pyramid.png";
+
 export {
   avatar1,
   avatar2,
@@ -46,4 +49,6 @@ export {
   pulseLogo,
   quantumLogo,
   celestialLogo,
+  pyramidImage,
+  tubeImage,
 }
