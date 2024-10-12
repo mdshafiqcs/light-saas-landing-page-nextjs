@@ -5,7 +5,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 export const Header = () => {
   return (
-    <header className='sticky pt-0'>
+    <header className='sticky top-0'>
       <div className='flex justify-center items-center py-3 bg-black text-white text-sm gap-3'>
         <p className='text-white/60 hidden md:block'>Streamline your workflow and boost your productivity</p>
         <div className='flex justify-center items-center gap-1'>
