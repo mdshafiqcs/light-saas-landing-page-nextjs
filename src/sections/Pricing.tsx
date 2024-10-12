@@ -63,7 +63,7 @@ export const Pricing = () => {
       <div className='mt-10 flex flex-col gap-6 items-center lg:flex-row lg:items-end lg:justify-center lg:gap-10 xl:gap-14 '>
         {
           pricingTiers.map(({title, monthlyPrice, buttonText, popular, inverse, features}) => (
-            <div key={title} className={cn("p-10 rounded-3xl border border-[#F1F1F1] shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full", {
+            <div key={title} className={cn("card", {
               "text-white bg-black border-black": inverse === true
             })}>
               <div className='flex justify-between'>
