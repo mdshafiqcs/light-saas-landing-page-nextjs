@@ -1,4 +1,9 @@
+import { Header } from "@/sections";
 
 export default function Home() {
-  return "Hello world";
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
