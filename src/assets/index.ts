@@ -26,7 +26,8 @@ import apexLogo from "@/assets/logo-apex.png";
 import tubeImage from "@/assets/tube.png";
 import pyramidImage from "@/assets/pyramid.png";
 import productImage from "@/assets/product-image.png";
-
+import springImage from "@/assets/spring.png";
+import starImage from "@/assets/star.png";
 
 export {
   avatar1,
@@ -54,4 +55,6 @@ export {
   pyramidImage,
   tubeImage,
   productImage,
+  springImage,
+  starImage,
 }
