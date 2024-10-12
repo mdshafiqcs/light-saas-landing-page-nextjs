@@ -19,6 +19,7 @@ const config: Config = {
         center: true,
         padding: {
           DEFAULT: "20px",
+          md:"30px",
           lg: "80px",
           xl: "100px",
         },
