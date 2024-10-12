@@ -27,6 +27,7 @@ import tubeImage from "@/assets/tube.png";
 import pyramidImage from "@/assets/pyramid.png";
 import productImage from "@/assets/product-image.png";
 
+
 export {
   avatar1,
   avatar2,
