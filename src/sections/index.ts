@@ -4,6 +4,7 @@ import { LogoTicker } from "./LogoTicker";
 import { ProductShowcase } from "./ProductShowcase";
 import { Pricing } from "./Pricing";
 import { Testimonials } from "./Testimonials";
+import { CallToAction } from "./CallToAction";
 
 
 export {
@@ -13,4 +14,5 @@ export {
   ProductShowcase,
   Pricing,
   Testimonials,
+  CallToAction,
 }
