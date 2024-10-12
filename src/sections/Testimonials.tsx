@@ -7,6 +7,8 @@ import avatar6 from "@/assets/avatar-6.png";
 import avatar7 from "@/assets/avatar-7.png";
 import avatar8 from "@/assets/avatar-8.png";
 import avatar9 from "@/assets/avatar-9.png";
+import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -65,6 +67,45 @@ const testimonials = [
   },
 ];
 
+const firstColumn = testimonials.slice(0,3);
+const secondColumn = testimonials.slice(3,6);
+const thirdColumn = testimonials.slice(6,9);
+
+
+const TestimonialColumn = (props: {className?: string, testimonials: typeof testimonials}) => (
+  <div className={cn("mt-10 flex flex-col gap-6 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]", props.className)}>
+    {
+      props.testimonials.map(({text, imageSrc, name, username}) => (
+        <div className='card' key={username} >
+          <div>{text}</div>
+          <div className="flex items-center gap-2 mt-5">
+            <Image src={imageSrc} height={40} width={40} alt={name} className="h-10 w-10 rounded-full" />
+            <div>
+              <div className="tracking-tight font-medium leading-5">{name}</div>
+              <div className='tracking-tight leading-5'>{username}</div>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+)
+
 export const Testimonials = () => {
-  return null;
+  return <section className="bg-white">
+    <div className='container'>
+      <div className="section-heading">
+        <div className='flex justify-center'>
+          <div className='tag'>Testimonials</div>
+        </div>
+        <h2 className='section-title mt-5'>What our users say</h2>
+        <p className='section-description mt-5'>From intuitive design to powerful features, our app has become an essential tool for users around the world.</p>
+      </div>
+      <div className='flex justify-center gap-6 xl:gap-10'>
+        <TestimonialColumn testimonials={firstColumn} />
+        <TestimonialColumn testimonials={secondColumn} className="hidden md:flex" />
+        <TestimonialColumn testimonials={thirdColumn} className="hidden lg:flex" />
+      </div>
+    </div>
+  </section>
 };

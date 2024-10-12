@@ -3,6 +3,7 @@ import { Hero } from "./Hero";
 import { LogoTicker } from "./LogoTicker";
 import { ProductShowcase } from "./ProductShowcase";
 import { Pricing } from "./Pricing";
+import { Testimonials } from "./Testimonials";
 
 
 export {
@@ -11,4 +12,5 @@ export {
   LogoTicker,
   ProductShowcase,
   Pricing,
+  Testimonials,
 }
