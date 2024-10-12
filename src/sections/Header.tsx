@@ -1,6 +1,5 @@
 import { ArrowRight, Logo, MenuIcon } from "@/assets";
 import Image from "next/image";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 
 export const Header = () => {
@@ -14,7 +13,7 @@ export const Header = () => {
         </div>
       </div>
       <div className='py-5'>
-        <MaxWidthWrapper>
+        <div className='container'>
           <div className='flex justify-between items-center'>
           <Image src={Logo} width={40} height={40} alt="Saas Logo" />
           <MenuIcon className='w-5 h-5 md:hidden' />
@@ -27,9 +26,7 @@ export const Header = () => {
             <button className='btn btn-primary'>Get for free</button>
           </nav>
           </div>
-        </MaxWidthWrapper>
-
-
+        </div>
 
       </div>
     </header>
