@@ -12,7 +12,7 @@ const config: Config = {
       sm: "375px",
       md: "768px",
       lg: "1200px",
-      
+      xl: "1536px",
     },
     extend: {
       container: {
@@ -20,7 +20,7 @@ const config: Config = {
         padding: {
           DEFAULT: "20px",
           lg: "80px",
-          xl: "50px"
+          xl: "100px",
         },
       },
     },
