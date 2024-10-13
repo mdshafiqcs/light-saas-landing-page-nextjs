@@ -11,8 +11,8 @@ import avatar8 from "@/assets/avatar-8.png";
 import avatar9 from "@/assets/avatar-9.png";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import React from "react";
+import { motion, useInView } from "framer-motion";
+import React, { useRef } from "react";
 
 const testimonials = [
   {
@@ -117,7 +117,11 @@ const TestimonialColumn = (props: {className?: string, testimonials: typeof test
 )
 
 export const Testimonials = () => {
-  return <section className="bg-white">
+
+  const sectionRef = useRef(null);
+  const inView = useInView(sectionRef, {once: true, amount: 0.4});
+
+  return <section ref={sectionRef} className="bg-white">
     <div className='container'>
       <div className="section-heading">
         <div className='flex justify-center'>
@@ -127,9 +131,13 @@ export const Testimonials = () => {
         <p className='section-description mt-5'>From intuitive design to powerful features, our app has become an essential tool for users around the world.</p>
       </div>
       <div className='flex justify-center gap-6 xl:gap-10 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[738px] overflow-hidden'>
-        <TestimonialColumn testimonials={firstColumn} duration={15}/>
-        <TestimonialColumn testimonials={secondColumn} className="hidden md:block" duration={19} />
-        <TestimonialColumn testimonials={thirdColumn} className="hidden lg:block" duration={17}/>
+        {
+          inView && <>
+            <TestimonialColumn testimonials={firstColumn} duration={15}/>
+            <TestimonialColumn testimonials={secondColumn} className="hidden md:block" duration={19} />
+            <TestimonialColumn testimonials={thirdColumn} className="hidden lg:block" duration={17}/>
+          </>
+        }
       </div>
     </div>
   </section>
