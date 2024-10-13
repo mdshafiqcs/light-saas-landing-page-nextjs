@@ -29,6 +29,14 @@ import productImage from "@/assets/product-image.png";
 import springImage from "@/assets/spring.png";
 import starImage from "@/assets/star.png";
 
+import SocialX from "@/assets/social-x.svg";
+import SocialInsta from "@/assets/social-insta.svg";
+import SocialLinkedIn from "@/assets/social-linkedin.svg";
+import SocialPin from "@/assets/social-pin.svg";
+import SocialYoutube from "@/assets/social-youtube.svg";
+
+
+
 export {
   avatar1,
   avatar2,
@@ -57,4 +65,9 @@ export {
   productImage,
   springImage,
   starImage,
+  SocialX,
+  SocialInsta,
+  SocialLinkedIn,
+  SocialPin,
+  SocialYoutube
 }
