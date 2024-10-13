@@ -34,6 +34,6 @@ export function constructMetadata({
       description,
     },
     icons,
-    metadataBase: new URL("https://lightsaas.vercel.app")
+    metadataBase: new URL("https://light-saas-landing-page-nextjs.vercel.app")
   }
 }
