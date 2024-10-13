@@ -73,7 +73,7 @@ const thirdColumn = testimonials.slice(6,9);
 
 
 const TestimonialColumn = (props: {className?: string, testimonials: typeof testimonials}) => (
-  <div className={cn("mt-10 flex flex-col gap-6 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]", props.className)}>
+  <div className={cn("mt-10 flex flex-col gap-6 ", props.className)}>
     {
       props.testimonials.map(({text, imageSrc, name, username}) => (
         <div className='card' key={username} >
@@ -101,7 +101,7 @@ export const Testimonials = () => {
         <h2 className='section-title mt-5'>What our users say</h2>
         <p className='section-description mt-5'>From intuitive design to powerful features, our app has become an essential tool for users around the world.</p>
       </div>
-      <div className='flex justify-center gap-6 xl:gap-10'>
+      <div className='flex justify-center gap-6 xl:gap-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]'>
         <TestimonialColumn testimonials={firstColumn} />
         <TestimonialColumn testimonials={secondColumn} className="hidden md:flex" />
         <TestimonialColumn testimonials={thirdColumn} className="hidden lg:flex" />
