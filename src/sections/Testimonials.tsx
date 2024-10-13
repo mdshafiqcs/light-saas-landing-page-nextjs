@@ -9,7 +9,7 @@ import avatar6 from "@/assets/avatar-6.png";
 import avatar7 from "@/assets/avatar-7.png";
 import avatar8 from "@/assets/avatar-8.png";
 import avatar9 from "@/assets/avatar-9.png";
-import { cn } from "@/lib/utils";
+
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import React, { useRef } from "react";

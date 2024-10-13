@@ -2,13 +2,11 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
+import { constructMetadata } from "@/lib/utils";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Light Saas Landing Page",
-  description: "Light Saas Landing Page",
-};
+export const metadata: Metadata = constructMetadata();
 
 export default function RootLayout({
   children,

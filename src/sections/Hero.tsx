@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowRight, CogImage, cylinderImage, noodleImage } from "@/assets";
-import Image from "next/image";
+
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
